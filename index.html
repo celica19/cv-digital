@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Digital - Portofolio Interaktif</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <!-- Navbar / Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><i class="bi bi-code-slash"></i> MyDigitalCV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portofolio">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section / Profil Singkat -->
+    <header id="profil" class="py-5 bg-white shadow-sm mb-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <img src="https://via.placeholder.com/180" alt="Foto Profil" class="rounded-circle img-thumbnail shadow">
+                </div>
+                <div class="col-md-8">
+                    <h1 class="fw-bold text-primary">Nama Anda</h1>
+                    <h5 class="text-secondary">Mahasiswa / Software Developer / Multimedia Enthusiast</h5>
+                    <p class="mt-3 text-muted">
+                        Selamat datang di CV digital saya. Saya memiliki ketertarikan besar pada pengembangan web, rekayasa multimedia, serta manajemen basis data. Senang mempelajari teknologi baru dan siap berkolaborasi dalam proyek inovatif.
+                    </p>
+                    <a href="#kontak" class="btn btn-primary mt-2"><i class="bi bi-envelope"></i> Hubungi Saya</a>
+                    <a href="#" class="btn btn-outline-secondary mt-2"><i class="bi bi-file-earmark-arrow-down"></i> Download CV (PDF)</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <!-- Kolom Kiri: Pendidikan & Pengalaman -->
+            <div class="col-lg-6 mb-4">
+                <section id="pendidikan" class="card shadow-sm border-0 p-4 h-100">
+                    <h3 class="h4 text-primary mb-3"><i class="bi bi-mortarboard"></i> Pendidikan & Organisasi</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item px-0">
+                            <h5 class="mb-1 fw-bold">Sistem dan Teknologi Informasi</h5>
+                            <p class="text-muted mb-1">Institut Teknologi Bisnis Riau | 2024 - Sekarang</p>
+                            <small class="text-secondary">Aktif dalam kegiatan akademik dan organisasi mahasiswa.</small>
+                        </li>
+                        <li class="list-group-item px-0">
+                            <h5 class="mb-1 fw-bold">Pendiri & Pimpinan Organisasi</h5>
+                            <p class="text-muted mb-1">Himpunan Mahasiswa (HIMASTI) | 2026</p>
+                            <small class="text-secondary">Memimpin kepengurusan, merancang program kerja, dan mengelola rekrutmen anggota.</small>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Kolom Kanan: Keahlian -->
+            <div class="col-lg-6 mb-4">
+                <section id="keahlian" class="card shadow-sm border-0 p-4 h-100">
+                    <h3 class="h4 text-primary mb-3"><i class="bi bi-tools"></i> Keahlian & Framework</h3>
+                    
+                    <label class="fw-bold mt-2">HTML / CSS / Bootstrap</label>
+                    <div class="progress mb-2" style="height: 10px;">
+                        <div class="progress-bar bg-success" style="width: 85%"></div>
+                    </div>
+
+                    <label class="fw-bold mt-2">Python & Logika Pemrograman</label>
+                    <div class="progress mb-2" style="height: 10px;">
+                        <div class="progress-bar bg-info" style="width: 75%"></div>
+                    </div>
+
+                    <label class="fw-bold mt-2">MySQL & Database Management</label>
+                    <div class="progress mb-2" style="height: 10px;">
+                        <div class="progress-bar bg-warning" style="width: 80%"></div>
+                    </div>
+
+                    <label class="fw-bold mt-2">Multimedia & Desain Antarmuka</label>
+                    <div class="progress mb-3" style="height: 10px;">
+                        <div class="progress-bar bg-danger" style="width: 70%"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Bagian Komponen Carousel (Galeri Portofolio Proyek) -->
+        <section id="portofolio" class="card shadow-sm border-0 p-4 mb-4">
+            <h3 class="h4 text-primary mb-3 text-center"><i class="bi bi-images"></i> Galeri Portofolio & Proyek</h3>
+            <p class="text-center text-muted mb-4">Berikut adalah beberapa dokumentasi proyek rekayasa multimedia dan pengembangan web yang pernah saya buat.</p>
+
+            <div id="portfolioCarousel" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://picsum.photos/seed/project1/1200/400" class="d-block w-100" alt="Proyek 1">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>Sistem Database Karyawan</h5>
+                            <p>Perancangan basis data menggunakan MySQL dan phpMyAdmin untuk manajemen perusahaan.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/seed/project2/1200/400" class="d-block w-100" alt="Proyek 2">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>Game Interaktif Python</h5>
+                            <p>Pengembangan game sederhana menggunakan Python untuk tugas rekayasa perangkat lunak.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/seed/project3/1200/400" class="d-block w-100" alt="Proyek 3">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>Desain Undangan Web Interaktif</h5>
+                            <p>Pembuatan antarmuka web dinamis dengan animasi CSS dan JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Kontak -->
+        <section id="kontak" class="card shadow-sm border-0 p-4 mb-5 text-center">
+            <h3 class="h4 text-primary mb-3"><i class="bi bi-chat-dots"></i> Hubungi Saya</h3>
+            <p class="text-muted">Tertarik bekerja sama atau berdiskusi seputar teknologi dan rekayasa multimedia?</p>
+            <div>
+                <a href="mailto:emailanda@domain.com" class="btn btn-outline-dark m-1"><i class="bi bi-envelope-fill"></i> Email</a>
+                <a href="https://linkedin.com" target="_blank" class="btn btn-outline-primary m-1"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com" target="_blank" class="btn btn-outline-secondary m-1"><i class="bi bi-github"></i> GitHub</a>
+                <a href="https://whatsapp.com" target="_blank" class="btn btn-outline-success m-1"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <small>&copy; 2026 CV Digital. Dibangun menggunakan Bootstrap 5 & Framework Multimedia.</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
